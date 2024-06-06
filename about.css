@@ -1,0 +1,153 @@
+body{
+    background: linear-gradient(to bottom right, #006699 0%, #00cc99 100%);
+    background-repeat: no-repeat;
+    height: 937px;
+}
+.navbar { 
+	display: flex; 
+	align-items: center; 
+	justify-content: space-between; 
+	position: fixed; 
+	top: 0; 
+	width: 100%; 
+	background: linear-gradient(to bottom right, #009999 0%, #4980b8 100%);
+	background-color: transparent; 
+    left: 0;
+} 
+
+.logo { 
+	padding: 0 5rem; 
+} 
+
+.logo .logo-heading { 
+	color: #fff; 
+    position: absolute;
+    left: 2.5%;
+    top: -10px;
+    font-size: xx-large;
+    animation-name: fadein;
+    animation-duration: 4s;
+    animation: fadeIn 2.5s ease-in-out forwards;
+} 
+
+.menu { 
+	padding: 0 5rem;
+} 
+
+.menu .menu-list { 
+	display: flex; 
+	list-style: none; 
+  font-family:'Courier New', Courier, monospace; 
+} 
+
+.menu-list .menu-list-items { 
+	padding: 0.5rem 1rem;
+  animation-name: example;
+  animation-duration: 4s;
+  animation: fadeIn 2.5s ease-in-out forwards;
+} 
+.links{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+/* aboutme */
+.image{
+    border-radius: 10px;
+    height: 60%;
+    width: 35%;
+    position: absolute;
+    left: 60%;
+    top: 20%;
+    animation-name: example;
+    animation-duration: 4s;
+    animation: fadeIn 2.5s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /* aboutme */
+  .aboutme{
+        width: 40%;
+        padding: 50px;
+        margin: 20px;
+        top: 25%;
+        left: 5%;
+        height: 40%;
+        position: absolute;
+        color: white;
+        text-align: justify;
+  }
+  .me{
+    position: absolute;
+    top: 12%;
+    font-size: 70px;
+    left: 17%;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    color: whitesmoke;
+    animation-name: forward;
+    animation-duration: 4s;
+    animation: fadeIn 2.5s ease-in-out forwards;    
+    width: 20%;
+    padding-left: 3%;
+    border-radius: 20px;
+    text-shadow: 5px 5px 20px wheat;
+  }
+  .about{
+    font-size: larger;
+    position: absolute;
+    top: 10px;
+    left: 2%;
+    text-align: center;
+    font-size: 40px;
+    animation-name: forward;
+    animation-duration: 4s;
+    animation: fadeIn 2.5s ease-in-out forwards;
+    font-weight: 200;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+      /* Footer styles */
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        animation-name: example;
+        animation-duration: 4s;
+        animation: fadeIn 2.5s ease-in-out forwards;
+      }
+    
+      /* Center text in footer */
+      footer p {
+        margin: 0;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }

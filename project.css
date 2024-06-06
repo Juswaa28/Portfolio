@@ -1,0 +1,251 @@
+body{
+    background: linear-gradient(to bottom right, #006699 0%, #00cc99 100%);
+    background-repeat: no-repeat;
+    height: 1000px;
+}
+.navbar { 
+	display: flex; 
+	align-items: center; 
+	justify-content: space-between; 
+	position: fixed; 
+	top: 0; 
+	width: 100%; 
+	background: linear-gradient(to bottom right, #009999 0%, #4980b8 100%);
+	background-color: transparent; 
+    left: 0;
+} 
+
+.logo { 
+	padding: 0 5rem; 
+} 
+
+.logo .logo-heading { 
+	color: #fff; 
+    position: absolute;
+    left: 2.5%;
+    top: -10px;
+    font-size: xx-large;
+    animation-name: fadein;
+    animation-duration: 4s;
+    animation: fadeIn 2.5s ease-in-out forwards;
+} 
+
+.menu { 
+	padding: 0 5rem;
+} 
+
+.menu .menu-list { 
+	display: flex; 
+	list-style: none; 
+  font-family:'Courier New', Courier, monospace; 
+} 
+
+.menu-list .menu-list-items { 
+	padding: 0.5rem 1rem;
+    animation-name: example;
+    animation-duration: 4s;
+    animation: fadeIn 2.5s ease-in-out forwards;
+} 
+.links{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+/* inside project body */
+.title{
+    top: 4%;
+    font-size: 70px;
+    color: whitesmoke;
+    position: absolute;
+    left: 42.6%;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    animation-name: fadein;
+    animation-duration: 4s;
+    animation: fadeIn 2.5s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+ /* flip card animation */
+
+ .flip-card {
+  background-color: transparent;
+  width: 700px;
+  height: 500px;
+  perspective: 1000px;
+  border-radius: 5%;
+  position: relative;
+  left: 8%;
+  animation-name: fadein;
+    animation-duration: 4s;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5%;
+  top: 50%;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  border-radius:5%;
+ 
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 5%;
+  animation-name: fadein;
+    animation-duration: 4s;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.flip-card-front {
+  background-color: #eedecb;
+  color: rgb(0, 0, 0);
+  border-radius: 5%;
+  animation-name: fadein;
+    animation-duration: 4s;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.flip-card-back {
+  background: linear-gradient(to bottom right, #009999 0%, #0099cc 100%);
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 5%;
+  opacity: 1;
+  animation-name: fadein;
+    animation-duration: 4s;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.abstract{
+  color: rgb(250, 248, 248);
+  font-size: 20px;
+  text-align: center;
+  font-family:'Courier New', Courier, monospace; 
+  position: absolute;
+  top: 15%;
+  font-weight: bold;
+  animation-name: fadein;
+    animation-duration: 4s;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* flip card animation 1 */
+
+.flip-cards{
+  background-color: transparent;
+  width: 700px;
+  height: 500px;
+  perspective: 1000px;
+  border-radius: 5%;
+  position: relative;
+  left: 57%;
+  animation-name: fadein;
+  animation-duration: 4s;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.flip-card-inners{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5%;
+  top: -50%;
+}
+
+.flip-cards:hover .flip-card-inners{
+  transform: rotateY(180deg);
+  border-radius:5%;
+ 
+}
+
+.flip-card-fronts, .flip-card-backs{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 5%;
+  animation-name: fadein;
+    animation-duration: 4s;
+    animation: fadeIn 2.5s ease-in-out forwards;
+}
+
+.flip-card-fronts{
+  background-color: #eedecb;
+  color: rgb(0, 0, 0);
+  border-radius: 5%;
+  animation-name: fadein;
+    animation-duration: 4s;
+    animation: fadeIn 2.5s ease-in-out forwards;
+}
+
+.flip-card-backs{
+  background: linear-gradient(to bottom right, #009999 0%, #0099cc 100%);
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 5%;
+  opacity: 1;
+  animation-name: fadein;
+  animation-duration: 4s;
+  animation: fadeIn 2.5s ease-in-out forwards;
+}
+
+.shooter{
+  color: rgb(250, 248, 248);
+  font-size: 20px;
+  text-align: center;
+  font-family:'Courier New', Courier, monospace; 
+  position: absolute;
+  top: 18%;
+  font-weight: bold;
+  animation-name: fadein;
+    animation-duration: 4s;
+    animation: fadeIn 2.5s ease-in-out forwards;
+}
+
+        /* Footer styles */
+        footer {
+          background-color: #333;
+          color: #fff;
+          padding: 20px 0;
+          text-align: center;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          left: 0;
+          animation-name: example;
+          animation-duration: 4s;
+          animation: fadeIn 2.5s ease-in-out forwards;
+        }
+      
+        /* Center text in footer */
+        footer p {
+          margin: 0;
+        }
