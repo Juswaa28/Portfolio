@@ -276,6 +276,16 @@ body{
     animation-duration: 4s;
     animation: fadeIn 2.5s ease-in-out forwards;
   }
+
+  .code{
+    position: absolute;
+    height: 150%;
+    top:-24%;
+    left: 8%;
+    animation-name: fadein;
+    animation-duration: 4s;
+    animation: fadeIn 2.5s ease-in-out forwards;
+  }
         /* Footer styles */
         footer {
           background-color: #333;
@@ -311,7 +321,7 @@ body{
           position: absolute;
           height: 9%;
           top: 58%;
-          left: 57%;
+          left: 60%;
           animation-name: example;
           animation-duration: 4s;
           animation: fadeIn 2.5s ease-in-out forwards;  
@@ -321,7 +331,7 @@ body{
           position: absolute;
           height: 12.5%;
           top: 56.2%;
-          left: 63.5%;
+          left: 66.5%;
           animation-name: example;
           animation-duration: 4s;
           animation: fadeIn 2.5s ease-in-out forwards;  
@@ -331,17 +341,7 @@ body{
           position: absolute;
           height: 7.5%;
           top: 58.5%;
-          left: 72%;
-          animation-name: example;
-          animation-duration: 4s;
-          animation: fadeIn 2.5s ease-in-out forwards;  
-        }
-
-        .viber{
-          position: absolute;
-          height: 7.5%;
-          top: 58.8%;
-          left: 79%;
+          left: 75%;
           animation-name: example;
           animation-duration: 4s;
           animation: fadeIn 2.5s ease-in-out forwards;  
@@ -351,7 +351,7 @@ body{
           position: absolute;
           height: 7.5%;
           top: 58.5%;
-          left: 86%;
+          left: 82%;
           animation-name: example;
           animation-duration: 4s;
           animation: fadeIn 2.5s ease-in-out forwards;  
@@ -367,4 +367,16 @@ body{
           animation-duration: 4s;
           animation: fadeIn 2.5s ease-in-out forwards;
           box-shadow: 1px 5px 15px whitesmoke;
+        }
+
+        @media screen and (min-width: 1024px) and (max-height: 1310px) {
+          .code{
+            position: absolute;
+            height: 150%;
+            top:-24%;
+            left: 11%;
+            animation-name: fadein;
+            animation-duration: 4s;
+            animation: fadeIn 2.5s ease-in-out forwards;
+          } 
         }
